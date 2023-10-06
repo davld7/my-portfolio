@@ -30,7 +30,13 @@ async def script():
     return FileResponse(template_path, media_type=media_type)
 
 
-@app.get('/favicon.png', tags=['favicon'], status_code=status.HTTP_200_OK)
+@app.get("/favicon.png", tags=['favicon'], status_code=status.HTTP_200_OK)
 async def favicon():
-    favicon_path = 'static/images/favicon.png'
+    favicon_path = "static/images/favicon.png"
     return FileResponse(favicon_path, media_type="image/png")
+
+
+@app.get("/user-interface.png", tags=['user-interface'], status_code=status.HTTP_200_OK)
+async def user_interface():
+    user_interface_path = "static/images/user-interface.png"
+    return FileResponse(user_interface_path, media_type="image/png")
