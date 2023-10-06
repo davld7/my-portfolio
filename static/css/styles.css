@@ -59,12 +59,18 @@ label {
 
 input[type="text"],
 input[type="email"],
-textarea {
+textarea,
+.message {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 6px;
+    margin-bottom: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.message {
+    resize: vertical;
+    height: 120px;
 }
 
 footer {
