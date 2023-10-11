@@ -8,6 +8,13 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 header {
@@ -74,8 +81,11 @@ textarea,
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     background-color: #fc5c5c;
     color: white;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
 }
