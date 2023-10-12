@@ -1,0 +1,10 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+icon: ./static/images/favicon.png
+micros:
+  - name: davidev
+    src: .
+    engine: python3.9
+    primary: true
+    public: true
+    run: uvicorn main:app
