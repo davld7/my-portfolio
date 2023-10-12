@@ -18,6 +18,6 @@ async def contact() -> FileResponse:
     Raises:
     - `None`.
     """
-    template_path = "templates/contact.html"
+    path = "templates/contact.html"
     media_type = "text/html"
-    return FileResponse(template_path, media_type=media_type)
+    return FileResponse(path=path, media_type=media_type)

@@ -18,9 +18,9 @@ async def about() -> FileResponse:
     Raises:
     - `None`.
     """
-    template_path = "templates/about.html"
+    path = "templates/about.html"
     media_type = "text/html"
-    return FileResponse(template_path, media_type=media_type)
+    return FileResponse(path=path, media_type=media_type)
 
 
 @router.get("/me.png", response_class=FileResponse, status_code=status.HTTP_200_OK)
@@ -37,6 +37,6 @@ async def me() -> FileResponse:
     Raises:
     - `None`.
     """
-    template_path = "static/images/me.png"
+    path = "static/images/me.png"
     media_type = "image/png"
-    return FileResponse(template_path, media_type=media_type)
+    return FileResponse(path=path, media_type=media_type)

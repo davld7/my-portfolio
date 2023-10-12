@@ -18,9 +18,9 @@ async def projects() -> FileResponse:
     Raises:
     - `None`.
     """
-    template_path = "templates/projects.html"
+    path = "templates/projects.html"
     media_type = "text/html"
-    return FileResponse(template_path, media_type=media_type)
+    return FileResponse(path=path, media_type=media_type)
 
 
 @router.get("/anime-list-app.png", response_class=FileResponse, status_code=status.HTTP_200_OK)
@@ -37,9 +37,9 @@ async def anime_list_icon() -> FileResponse:
     Raises:
     - `None`.
     """
-    template_path = "static/images/anime-list-app.png"
+    path = "static/images/anime-list-app.png"
     media_type = "image/png"
-    return FileResponse(template_path, media_type=media_type)
+    return FileResponse(path=path, media_type=media_type)
 
 
 @router.get("/anime-list-api.png", response_class=FileResponse, status_code=status.HTTP_200_OK)
@@ -56,6 +56,6 @@ async def anime_list_api() -> FileResponse:
     Raises:
     - `None`.
     """
-    template_path = "static/images/anime-list-api.png"
+    path = "static/images/anime-list-api.png"
     media_type = "image/png"
-    return FileResponse(template_path, media_type=media_type)
+    return FileResponse(path=path, media_type=media_type)
